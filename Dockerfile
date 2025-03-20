@@ -8,7 +8,7 @@ ENV MyName="Student Yay"
 WORKDIR /app
 #working path for application inside container
 
-COPY src1/html /usr/share/nginx/html
+COPY src/html /usr/share/nginx/html
 #copy the files for html from our working directory to the  direcotry that nginx will use
 
 
