@@ -22,6 +22,8 @@ jobs:
       run: |
         mkdir ${HOME}/.kube
         echo ${{secrets.KUBE_CONFIG}} | base64 --decode > ${HOME}/.kube/config
+    - name: Start minikube
+      run: minikube start
     - name: Use context
       run: |
         kubectl version
