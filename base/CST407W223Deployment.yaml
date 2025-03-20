@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: cst407
-        image: intime333/ubuntu:latest
+        image: ubuntu:latest
         imagePullPolicy: "Always"
         ports:
         - containerPort: 80
